@@ -5,7 +5,7 @@ const NavLink = ({ hasDropdown = false, href, id, children, className }) => {
     if (hasDropdown) {
         return (
             <a
-                className="nav-link dropdown-toggle"
+                className="nav-link"
                 href={href}
                 id={id}
                 role="button"
