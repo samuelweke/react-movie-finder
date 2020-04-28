@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const NavItem = ({ hasDropdown = false, children }) => {
     return (
-        <li className={`nav-item ${hasDropdown ? "dropdown" : ''}`}>
+        <li className={`nav-item ${hasDropdown ? "dropdown" : ""}`}>
             {children}
         </li>
     );
