@@ -7,32 +7,44 @@ const NavItems = () => {
     return (
         <ul className="navbar-nav navbar-right">
             <NavItem>
-                <NavLink className="nav-link" href="/#">
+                <NavLink className="nav-link" to="/sa">
                     Home
                 </NavLink>
             </NavItem>
             <NavItem hasDropdown>
-                <NavLink hasDropdown href="#" id="moviesDropdown">
+                <NavLink hasDropdown href="/" id="moviesDropdown">
                     Movies
                 </NavLink>
                 <Dropdown ariaLabelledBy="moviesDropdown">
-                    <NavLink className="dropdown-item" href="#">Popular</NavLink>
-                    <NavLink className="dropdown-item" href="#">Upcoming</NavLink>
-                    <NavLink className="dropdown-item" href="#">Top Rated</NavLink>
+                    <NavLink className="dropdown-item" to="">
+                        Popular
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="">
+                        Upcoming
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="">
+                        Top Rated
+                    </NavLink>
                 </Dropdown>
             </NavItem>
             <NavItem hasDropdown>
-                <NavLink hasDropdown href="#" id="tvDropdown">
+                <NavLink hasDropdown href="" id="tvDropdown">
                     TV Shows
                 </NavLink>
                 <Dropdown ariaLabelledBy="tvDropdown">
-                    <NavLink className="dropdown-item" href="#">Popular</NavLink>
-                    <NavLink className="dropdown-item" href="#">ON TV</NavLink>
-                    <NavLink className="dropdown-item" href="#">Top Rated</NavLink>
+                    <NavLink className="dropdown-item" to="">
+                        Popular
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="">
+                        ON TV
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="">
+                        Top Rated
+                    </NavLink>
                 </Dropdown>
             </NavItem>
             <NavItem>
-                <NavLink className="nav-link" href="/#">
+                <NavLink className="nav-link" to="/">
                     More
                 </NavLink>
             </NavItem>
