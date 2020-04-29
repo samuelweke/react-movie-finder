@@ -7,16 +7,16 @@ const NavItems = () => {
     return (
         <ul className="navbar-nav navbar-right">
             <NavItem>
-                <NavLink className="nav-link" to="/sa">
+                <NavLink className="nav-link" to="/">
                     Home
                 </NavLink>
             </NavItem>
             <NavItem hasDropdown>
-                <NavLink hasDropdown href="/" id="moviesDropdown">
+                <NavLink hasDropdown to="" id="moviesDropdown">
                     Movies
                 </NavLink>
                 <Dropdown ariaLabelledBy="moviesDropdown">
-                    <NavLink className="dropdown-item" to="">
+                    <NavLink className="dropdown-item" to="/movie">
                         Popular
                     </NavLink>
                     <NavLink className="dropdown-item" to="">
@@ -28,7 +28,7 @@ const NavItems = () => {
                 </Dropdown>
             </NavItem>
             <NavItem hasDropdown>
-                <NavLink hasDropdown href="" id="tvDropdown">
+                <NavLink hasDropdown to="" id="tvDropdown">
                     TV Shows
                 </NavLink>
                 <Dropdown ariaLabelledBy="tvDropdown">
