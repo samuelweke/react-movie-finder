@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import NavItems from "./NavItems/NavItems";
 
 import classes from "./Navbar.module.css";
@@ -7,9 +8,9 @@ const Navbar = () => {
     return (
         <header className={`navbar navbar-expand ${classes.Navbar}`}>
             <div className="container">
-                <a className="navbar-brand mr-auto" href="/#">
+                <NavLink className="navbar-brand mr-auto" to="/">
                     MovieFinder
-                </a>
+                </NavLink>
                 <NavItems />
             </div>
         </header>
