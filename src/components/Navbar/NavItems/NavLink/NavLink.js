@@ -2,19 +2,12 @@ import React from "react";
 import { NavLink as Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const NavLink = ({
-    hasDropdown = false,
-    to,
-    href,
-    id,
-    children,
-    className,
-}) => {
+const NavLink = ({ hasDropdown = false, to, id, children, className }) => {
     if (hasDropdown) {
         return (
-            <a
+            <Link
                 className="nav-link"
-                href={href}
+                to={to}
                 id={id}
                 role="button"
                 data-toggle="dropdown"
@@ -22,7 +15,7 @@ const NavLink = ({
                 aria-expanded="false"
             >
                 {children}
-            </a>
+            </Link>
         );
     } else {
         return (
@@ -35,7 +28,7 @@ const NavLink = ({
 
 NavLink.propTypes = {
     hasDropdown: PropTypes.bool,
-    href: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired,
     id: PropTypes.string,
     className: PropTypes.string,
     children: PropTypes.string.isRequired,
