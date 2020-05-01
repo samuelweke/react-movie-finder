@@ -40,7 +40,7 @@ class Trending extends Component {
             trending: { results },
         } = this.state;
 
-        let loader = [1, 2, 3, 4, 5, 6, 7].map((a, i) => (
+        let loader = Array(7).fill(null).map((a, i) => (
             <CardSkeleton key={i} />
         ));
 
@@ -60,7 +60,7 @@ class Trending extends Component {
         return (
             <main>
                 <section className="container">
-                    <h1>Trending</h1>
+                    <h2 className={classes.Trending}>Trending</h2>
                     <div className="d-flex card-scroll">
                         {isLoading ? loader : movieCard}
                     </div>
